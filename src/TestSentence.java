@@ -28,7 +28,7 @@ public class TestSentence {
     }
 
         public List<String> returnSentencesByWord(String word,String inputText){
-        List <String> sentences = List.of(inputText.split("[.]",0)) ;
+        List <String> sentences = List.of(inputText.split("[.!?]",0)) ;
         List<String> sentencesContainsWord=new ArrayList<>();
         for (String sentence : sentences){
           if(sentence.contains(word)){
