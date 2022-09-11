@@ -21,7 +21,7 @@ public class App {
         String searchWord = scanner.next();
         TestSentence searchWordInText = new TestSentence();
         String textForSearchWord ="Необходимо создать класс с тремя методами."
-                + " Снова создать новую программу. Решить уравнение.";
+                + " Снова создать новую программу. Решить уравнение. Создать новое решение? Все поменять и создать заново!";
         sentenceByTheWord =  searchWordInText.returnSentencesByWord(searchWord, textForSearchWord);
         for(String sentence : sentenceByTheWord){
             System.out.println(sentence);
