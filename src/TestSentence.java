@@ -12,7 +12,7 @@ public class TestSentence {
     }
 
     public Map<String, Integer> getCountWordsInSentenceMap(String inputText) {
-      List<String> words = List.of(inputText.split("[, ?.@]+"));
+      List<String> words = List.of(inputText.split("[, ?.@!:;\"]+"));
       mapWords = new HashMap<>();
       for(String word : words) {
           Integer count = mapWords.get(word);
