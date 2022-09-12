@@ -19,6 +19,7 @@ public class App {
         System.out.println("+++++++++++Search by the word+++++++++++++");
         System.out.println("Please, you should  enter the word for searching sentences where contains your word:");
         String searchWord = scanner.next();
+        scanner.close();
         TestSentence searchWordInText = new TestSentence();
         String textForSearchWord ="Необходимо создать класс с тремя методами."
                 + " Снова создать новую программу. Решить уравнение. Создать новое решение? Все поменять и создать заново!";
